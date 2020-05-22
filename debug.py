@@ -1,7 +1,6 @@
 #!/usr/bin/env python3.7
 
 def odump(obj, no_dunder=True, whelp=False):
-    global tb
     """Dump attributes of an object with values, somewhat similar to PHP's print_r"""
     import builtins
     builtin_types = [ty for ty in builtins.__dict__.values() if isinstance(ty, type)]
